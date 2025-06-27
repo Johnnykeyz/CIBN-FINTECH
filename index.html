@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIBN FinTech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="./img/CIBN 2.png">
+</head>
+<body>
+    <!-- Background Slideshow -->
+    <div class="slideshow-container">
+        <div class="slide active"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+    </div>
+    
+    <!-- Transparent overlay -->
+    <div class="overlay"></div>
+
+    <!-- Sticky Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">
+            <img id="logoimg" src="img/CIBN.png" alt="cibnlogo">
+            <h4>FINTECH</h4>
+        </a>
+       <div class="navbar-toggle" id="navbar-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar-menu" id="navbar-menu">
+            <li><a href="index.html"><strong>Home</strong></a></li>
+            <li><a href="MemberRegistration.html"><strong>Membership</strong></a></li>
+            <li><a href="examRegistration.html"><strong>Examinations</strong></a></li>
+            <li><a href="FintechCertificationProgramme.pdf"><strong>Documents</strong></a></li>
+            <li class="header-tab"><a id="login" href="login.html"><strong>Login</strong></a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="header fade-in" id="home">
+        <div class="logo-container">
+            <div class="logo-item">
+                <img src="img/CIBN 2.png" alt="CIBN logo">
+                <div class="logo-description">
+                    THE CHARTERED INSTITUTE<br>
+                    OF BANKERS OF NIGERIA
+                </div>
+            </div>
+            <div class="header-icon"><strong>+</strong></div>
+            <div class="logo-item">
+                <img id="fin" src="img/FintechNgr-Final-logo-removebg-preview.png" alt="fintechAN">
+                <div class="logo-description">
+                    FINTECH<br>
+                    ASSOCIATION OF NIGERIA
+                </div>
+            </div>
+            <div class="header-icon"><strong>+</strong></div>
+            <div class="logo-item">
+                <img src="img/FSI 2.png" alt="FSI">
+                <div class="logo-description">
+                    THE FINANCIAL<br>
+                    SERVICES INNOVATORS
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content" id="services">
+        <div class="services-grid">
+            <div class="service-card slide-up">
+                <div class="service-icon">👥</div>
+                <h2 class="service-title">Membership Registration</h2>
+                <p class="service-description">Join our professional community of banking and fintech experts. Access exclusive resources, networking opportunities, and industry insights.</p>
+                <a href="MemberRegistration.html"><button class="service-btn" onclick="handleClick('membership')">Get Started</button></a>
+            </div>
+
+            <div class="service-card slide-up" style="animation-delay: 0.2s;">
+                <div class="service-icon">📝</div>
+                <h2 class="service-title">Examination Registration</h2>
+                <p class="service-description">Register for professional certification exams and advance your career in banking and financial technology with our comprehensive programs.</p>
+                <a href="examRegistration.html"><button class="service-btn" onclick="handleClick('examination')">Register Now</button></a>
+            </div>
+
+            <div class="service-card slide-up" style="animation-delay: 0.4s;">
+                <div class="service-icon">📄</div>
+                <h2 class="service-title">Document Download</h2>
+                <p class="service-description">Download document that contains Fintech certification program enformation and detail.</p>
+                <a href="FintechCertificationProgramme.pdf"><button class="service-btn" onclick="handleClick('documents')">Download</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 CIBN FinTech Portal. Empowering the future of financial services.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
